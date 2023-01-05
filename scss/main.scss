@@ -23,8 +23,51 @@
 
 }
 
+.main {
+  width: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.main .hero{
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 2em;
+}
 
-
+.figure {
+  width: 100%;
+  .img{
+    width: 100%;
+  }
+}
+.title {
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+ 
+}
+.p{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.button{
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--Cyan);
+  color: white;
+  padding:.6rem 3rem;
+  border-radius: 20px;
+}
 .grid{
   width: 90%;
   max-width: 40em;

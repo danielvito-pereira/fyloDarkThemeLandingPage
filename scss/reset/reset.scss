@@ -22,24 +22,13 @@ body {
   box-sizing: border-box;
   background-color: var(--mainbackground);
 }
-/*
-  Con este reset vamos a resolver:
-    👉 Unificar el uso de Custom Properties
-    👉 Problemas de box-model más generales
-    👉 Problemas con imagenes, vídeos e iconos svg
-    👉 Problemas con tipografías y etiquetas input en formularios
-    👉 Unificar la tipografía de todas las etiquetas de una web
-*/
-/* Las adaptamos al modo oscuro */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --negro: #ececec;
   }
 }
-/* Opcional */
-/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-/* Opcional */
-/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation: none !important;
@@ -48,7 +37,7 @@ body {
     transition: none !important;
   }
 }
-/* Reseteamos los margin y paddings de todas las etiquetas */
+
 * {
   margin: 0;
   padding: 0;
@@ -57,19 +46,14 @@ body {
           box-sizing: border-box;
   vertical-align: baseline;
 }
-/* Evitamos problemas con las imagenes */
+
 img, picture, video, iframe, figure {
   max-width: 100%;
   width: 100%;
   display: block;
-  /* opcional
-  -o-object-fit: cover;
-    object-fit: cover; */
-  /* opcional 
-  -o-object-position: center center;
-    object-position: center center;*/
+
 }
-/* Reseteamos los enlaces para funcionar como cajas... */
+
 a {
   display: block;
   text-decoration: none;
