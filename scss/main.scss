@@ -1,1 +1,35 @@
 @import  'reset/reset';
+
+.header{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  .ul{
+    display: flex;
+    gap: 3.125rem;
+    .li{
+      cursor: pointer;
+      color: var(--white);
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
+.header .h1{
+
+}
+
+
+
+.grid{
+  width: 90%;
+  max-width: 40em;
+  margin: 1em 0;
+  display: grid;
+  grid-template-columns: repeat( auto-fit , minmax( 15rem , 1fr) );
+  gap:1em;
+}

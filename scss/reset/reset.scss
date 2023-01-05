@@ -1,15 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
-  --white: #fff;
+  --white: : hsl(0, 0%, 100%);
   --primary-color: #043873;
   --blue-2:#4F9CF9;
   --paragraph: hsl(210, 9%, 31%);
   --button2: #FFE492;
   --negro: #393939;
+  --signupbackground: hsl(217, 28%, 15%);
+  --mainbackground: hsl(218, 28%, 13%);
+  --footerbackground: hsl(216, 53%, 9%);
+  --testimonialsbackground: hsl(219, 30%, 18%);
+
+  --Cyan : hsl(176, 68%, 64%);
+  --Blue : hsl(198, 60%, 50%);
+  --error: hsl(0, 100%, 63%);
 }
 body {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
+  background-color: var(--mainbackground);
 }
 /*
   Con este reset vamos a resolver:
