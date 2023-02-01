@@ -123,13 +123,12 @@ table, tr, td {
   border-spacing: 0;
 }
 
-/* Evitamos problemas con los SVG */
+/* Evitamos problemas con los SVG 
 svg {
   width: 100%;
   display: block;
   fill: currentColor;
-}
-
+}*/
 /* (Probándolo, no usar en producción) En el caso de añadir una  */
 /* p svg{
   display: inline;
@@ -161,7 +160,7 @@ body {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 3rem;
+  padding: 5em 3em;
 }
 .header .ul {
   display: flex;
@@ -176,7 +175,7 @@ body {
 }
 
 .main {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -185,6 +184,7 @@ body {
 
 .main .hero {
   width: 50%;
+  max-width: 1116.42px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -195,6 +195,7 @@ body {
 
 .figure {
   width: 100%;
+  max-width: 1116.42px;
 }
 .figure .img {
   width: 100%;
@@ -202,8 +203,8 @@ body {
 
 .title {
   text-align: center;
-  line-height: 1.2em;
-  font-size: 2em;
+  line-height: 1.5em;
+  font-size: 3em;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   color: white;
@@ -213,23 +214,204 @@ body {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 
 .button {
   font-family: "Open Sans", sans-serif;
   background-color: var(--Cyan);
   color: white;
-  padding: 0.6rem 3rem;
+  padding: 0.6em 4em;
   border-radius: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
 .grid {
-  width: 90%;
-  max-width: 40em;
+  width: 60%;
+  max-width: 1116.42px;
   margin: 1em 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 12em;
+  align-items: center;
+  padding: 1em;
+}
+.grid .article {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sub-title {
+  text-align: center;
+  line-height: 1.2em;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+.section {
+  width: 90%;
+  display: flex;
+  gap: 50px;
+}
+.section .figure {
+  width: 50%;
+}
+.section .texto {
+  width: 50%;
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.section .texto .p {
+  text-align: start;
+}
+
+.coments {
+  width: 90%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
+  padding: 1em;
+}
+.coments .comentario {
+  background-color: var(--testimonialsbackground);
+  padding: 2rem;
+}
+.coments .comentario .p {
+  text-align: left;
+  color: var(--white);
+}
+.coments .avatar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+}
+.coments .avatar .profile {
+  border-radius: 50%;
+  width: 10%;
+}
+.coments .avatar .profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.float {
+  width: 60%;
+  background-color: red;
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+.float .send {
+  width: 90%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footerbackground);
+  padding: 5em;
+}
+.footer .wrapper {
+  width: 90%;
+  max-width: 120rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1em;
   gap: 1em;
+}
+.footer .wrapper .container {
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.footer .wrapper .lo {
+  width: 30%;
+  gap: 1em;
+}
+.footer .wrapper .lo .location {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 1em;
+  cursor: pointer;
+  text-align: left;
+  color: var(--white);
+}
+.footer .wrapper .lo .location:hover {
+  color: white;
+}
+.footer .wrapper .lo .location::before {
+  content: url(../images/icon-location.svg);
+}
+.footer .wrapper .contatos {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+.footer .wrapper .contatos .p {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 1em;
+  cursor: pointer;
+}
+.footer .wrapper .contatos .phone::before {
+  content: url(../images/icon-phone.svg);
+}
+.footer .wrapper .contatos .phone:hover {
+  color: white;
+}
+.footer .wrapper .contatos .email::before {
+  content: url(../images/icon-email.svg);
+}
+.footer .wrapper .contatos .email:hover {
+  color: white;
+}
+.footer .wrapper .about .p {
+  text-align: left;
+  cursor: pointer;
+}
+.footer .wrapper .about .p:hover {
+  color: white;
+}
+.footer .wrapper .contact .p {
+  text-align: left;
+  cursor: pointer;
+}
+.footer .wrapper .contact .p:hover {
+  color: white;
+}
+.footer .wrapper .redes {
+  background-color: saddlebrown;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2em;
 }
 
 /*# sourceMappingURL=main.css.map */
