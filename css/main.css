@@ -237,6 +237,7 @@ body {
   gap: 12em;
   align-items: center;
   padding: 1em;
+  margin-top: 13rem;
 }
 .grid .article {
   display: flex;
@@ -255,8 +256,11 @@ body {
 
 .section {
   width: 90%;
+  max-width: 120rem;
   display: flex;
   gap: 50px;
+  margin-top: 13rem;
+  margin-bottom: 13rem;
 }
 .section .figure {
   width: 50%;
@@ -276,6 +280,7 @@ body {
 
 .coments {
   width: 90%;
+  max-width: 120rem;
   display: flex;
   flex-flow: row nowrap;
   gap: 50px;
@@ -308,41 +313,64 @@ body {
 
 .float {
   width: 60%;
-  background-color: red;
-  padding: 1em;
+  max-width: 87.25rem;
+  background-color: var(--signupbackground);
+  padding: 2em;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 10.3125rem;
+  box-shadow: 0px 5px 6px var(--footerbackground);
   gap: 3em;
 }
+.float .texto {
+  width: 80%;
+}
+.float .texto .p {
+  color: white;
+}
 .float .send {
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
   gap: 2em;
+  border-radius: 30px;
+}
+.float .send .input {
+  background-color: aliceblue;
+  border-radius: 30px;
+  width: 100%;
+  padding: 1.5em 1em;
+}
+.float .send .button {
+  padding: 1em 1em;
+  width: 40%;
+  border-radius: 30px;
 }
 
 .footer {
   width: 100%;
+  height: 60vh;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: var(--footerbackground);
   padding: 5em;
 }
 .footer .wrapper {
   width: 90%;
-  max-width: 120rem;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
   justify-content: space-between;
   padding: 1em;
   gap: 1em;
+  margin-top: 13rem;
 }
 .footer .wrapper .container {
   padding: 1em;
